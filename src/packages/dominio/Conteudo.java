@@ -11,6 +11,14 @@ public abstract class Conteudo {
 	}
 
 
+	public Conteudo() { }
+
+	public Conteudo(String title, String description) {
+		this.title = title;
+		this.description = description;
+	}
+
+
 	public void setTitle(String title) {
 		this.title = title;
 	}

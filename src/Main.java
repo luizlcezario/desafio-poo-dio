@@ -21,12 +21,9 @@ public class Main {
         bootcamp.getConteudos().add(curso);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev dev1 = new Dev();
-        dev1.setName("Ze");
-        
-        Dev dev2 = new Dev();
-        dev2.setName("Luiz");
-        
+        Dev dev1 = new Dev("Ze");
+        Dev dev2 = new Dev("Luiz");
+        System.out.println("--------------");
         System.out.println("Ze: " + dev1.getConteudosIncritos());
         System.out.println("Luiz: " + dev2.getConteudosIncritos());
         dev1.inscreverBootcamp(bootcamp);

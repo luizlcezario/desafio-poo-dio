@@ -3,6 +3,11 @@ package dominio;
 public class Curso extends Conteudo {
 	private int hours;
 	
+	public Curso() { }
+	public Curso(String title, String description, int hours) {
+		super(title, description);
+		this.hours = hours;
+	}
 	public int getHours() {
 		return hours;
 	}
