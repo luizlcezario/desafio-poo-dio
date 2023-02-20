@@ -2,22 +2,9 @@ package dominio;
 
 import java.time.LocalDate;
 
-public class Mentoria {
-	private String title;
-	private String description;
+public class Mentoria extends Conteudo {
 	private LocalDate date;
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
+	
 	public LocalDate getDate() {
 		return date;
 	}
@@ -26,7 +13,11 @@ public class Mentoria {
 	}
 	@Override
 	public String toString() {
-		return "Mentoria [title=" + title + ", description=" + description + ", date=" + date + "]";
+		return "Mentoria [title=" + getTitle() + ", description=" + getDescription() + ", date=" + date + "]";
+	}
+	@Override
+	public double calcularXP() {
+		return XP_PADRAO + 20;
 	}
 	
 }
