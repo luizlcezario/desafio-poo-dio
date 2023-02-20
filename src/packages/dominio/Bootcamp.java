@@ -46,7 +46,7 @@ public class Bootcamp {
 		return conteudos;
 	}
 	public void setConteudos(Set<Conteudo> conteudos) {
-		this.conteudos = conteudos;
+		this.conteudos.addAll(conteudos);
 	}
 	@Override
 	public int hashCode() {
