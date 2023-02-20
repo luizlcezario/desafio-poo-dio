@@ -1,5 +1,4 @@
 import java.time.LocalDate;
-import java.util.HashSet;
 
 import dominio.Bootcamp;
 import dominio.Curso;
